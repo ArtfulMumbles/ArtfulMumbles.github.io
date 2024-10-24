@@ -2,19 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: >
-  <blockquote style="text-align: right; margin-right: 10%; font-size: 0.85em;"> 
-    “The more I read, the more I acquire, the more certain I am that I know nothing.” — <cite>Voltaire</cite>
-  </blockquote>
+subtitle: “The more I read, the more I acquire, the more certain I am that I know nothing.” — <cite>Voltaire</cite>
+
 
 profile:
   align: right
   image: prof_pic.png
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>Durham, NC 27708</p>
+  more_info: 
 
-news: false # includes a list of news items
+news: true # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 blog: false
