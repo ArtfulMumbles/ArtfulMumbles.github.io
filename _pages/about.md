@@ -2,7 +2,10 @@
 layout: about
 title: about
 permalink: /
-subtitle: <blockquote>“The more I read, the more I acquire, the more certain I am that I know nothing.” — <cite>Voltaire</cite></blockquote>
+subtitle: >
+  <blockquote style="text-align: right; margin-right: 10%; font-size: 0.85em;"> 
+    “The more I read, the more I acquire, the more certain I am that I know nothing.” — <cite>Voltaire</cite>
+  </blockquote>
 
 profile:
   align: right
@@ -14,12 +17,11 @@ profile:
 news: false # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
+blog: false
 ---
 
-I’m Michael Scutari, a junior at Duke University pursuing a dual degree in Electrical and Computer Engineering (ECE) and Computer Science (CS). My work blends AI, robotics, and bioinformatics, where I explore applications of machine learning in both physical systems and biological research. Currently, I’m involved in cutting-edge bioinformatics research under the guidance of Dr. Rohit Singh, focusing on leveraging AI to solve complex biological challenges.
+I'm a third-year student at Duke University pursuing degrees in ECE and CS. My work blends AI, robotics, and bioinformatics, where I explore applications of machine learning in both physical systems and biological research. I'm currently researching protein language models for use in drug development under the guidance of Dr. Rohit Singh.
 
-In addition to research, I am a Pratt Fellow and a TA, where I mentor students and develop meaningful academic relationships. My passions extend to sustainability and the intersection of technology with environmental impact, as I aspire to make meaningful contributions without compromising my investment in these causes.
+My work has earned me a Pratt Fellowship and consideration for graduation with distinction in ECE. I also serve as a TA for undergraduate ECE labs.
 
-Beyond academics, I enjoy experimenting with Italian cuisine, refining my photography skills, and playing strategy games like Team Fight Tactics. I value meaningful connections and am actively developing my career toward graduate research or consulting, seeking ways to balance technical work with real-world impact.
-
-Let’s connect over robotics, AI, or even your favorite Italian recipe!
+I enjoy photography, italian fusion cuisine, and host a podcast that highlights Duke's most impressive talent. 
