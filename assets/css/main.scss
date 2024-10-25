@@ -44,10 +44,3 @@ $max-content-width: {{ site.max_width }};
   color: white;
   margin: 0 auto; /* Center the content */
 }
-
-/* Prevent scrolling issues */
-body {
-  margin: 0;
-  overflow-x: hidden; /* Disable horizontal scroll */
-}
-

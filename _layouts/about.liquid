@@ -23,13 +23,13 @@ layout: default
         {% if page.profile.image %}
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
           {% assign profile_image_class = page.profile.image_circular | default: 'img-fluid z-depth-1 rounded' %}
-          {% include figure.liquid
-            loading="eager"
-            path=profile_image_path
-            class=profile_image_class
-            sizes='(min-width: 576px) 30vw, 95vw'
-            alt=page.profile.image
-            cache_bust=true
+          {% include figure.liquid 
+            loading="eager" 
+            path=profile_image_path 
+            class=profile_image_class 
+            sizes='(min-width: 576px) 30vw, 95vw' 
+            alt=page.profile.image 
+            cache_bust=true 
           %}
         {% endif %}
         {% if page.profile.more_info %}
@@ -76,31 +76,39 @@ layout: default
 {% raw %}
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script>
-  particlesJS("particles-js", {
-    "particles": {
-      "number": {
-        "value": 30,
-        "density": { "enable": true, "value_area": 800 }
+  console.log("Particles.js script loaded");
+  
+  if (typeof particlesJS !== 'undefined') {
+    console.log("Initializing particles.js");
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 30,
+          "density": { "enable": true, "value_area": 800 }
+        },
+        "color": { "value": "#ffffff" },
+        "shape": { "type": "circle" },
+        "opacity": { "value": 0.7 },
+        "size": { "value": 3, "random": true },
+        "move": { "enable": true, "speed": 1 }
       },
-      "color": { "value": "#ffffff" },
-      "shape": { "type": "circle" },
-      "opacity": { "value": 0.7 },
-      "size": { "value": 3, "random": true },
-      "move": { "enable": true, "speed": 1 }
-    },
-    "interactivity": {
-      "detect_on": "canvas",
-      "events": {
-        "onhover": { "enable": true, "mode": "grab" },
-        "onclick": { "enable": true, "mode": "push" },
-        "resize": true
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": { "enable": true, "mode": "grab" },
+          "onclick": { "enable": true, "mode": "push" },
+          "resize": true
+        },
+        "modes": {
+          "grab": { "distance": 100, "line_linked": { "opacity": 1 } },
+          "push": { "particles_nb": 4 }
+        }
       },
-      "modes": {
-        "grab": { "distance": 100, "line_linked": { "opacity": 1 } },
-        "push": { "particles_nb": 4 }
-      }
-    },
-    "retina_detect": true
-  });
+      "retina_detect": true
+    });
+    console.log("particlesJS initialized");
+  } else {
+    console.log("particlesJS is not defined");
+  }
 </script>
 {% endraw %}
