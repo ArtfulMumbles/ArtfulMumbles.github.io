@@ -5,12 +5,11 @@ layout: default
 <!-- Particles.js container -->
 <div id="particles-js"></div>
 
-<div class="post content">
+<div class="post content particles-content">
   <header class="post-header">
     <h1 class="post-title">
       {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
+        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}
       {% else %}
         {{ site.title }}
       {% endif %}
@@ -23,15 +22,13 @@ layout: default
       <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
         {% if page.profile.image %}
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% assign profile_image_class = page.profile.image_circular 
-            | default: 'img-fluid z-depth-1 rounded' %}
-          {%
-            include figure.liquid 
-            loading="eager" 
-            path=profile_image_path 
-            class=profile_image_class 
-            sizes='(min-width: 576px) 30vw, 95vw' 
-            alt=page.profile.image 
+          {% assign profile_image_class = page.profile.image_circular | default: 'img-fluid z-depth-1 rounded' %}
+          {% include figure.liquid
+            loading="eager"
+            path=profile_image_path
+            class=profile_image_class
+            sizes='(min-width: 576px) 30vw, 95vw'
+            alt=page.profile.image
             cache_bust=true
           %}
         {% endif %}
@@ -76,47 +73,34 @@ layout: default
 </div>
 
 <!-- Load and Initialize Particles.js -->
+{% raw %}
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 <script>
   particlesJS("particles-js", {
     "particles": {
-      "number": { "value": 80, "density": { "enable": true, "value_area": 800 } },
+      "number": {
+        "value": 30,
+        "density": { "enable": true, "value_area": 800 }
+      },
       "color": { "value": "#ffffff" },
-      "shape": {
-        "type": "circle",
-        "stroke": { "width": 0, "color": "#000000" }
-      },
-      "opacity": { "value": 0.5, "random": false },
-      "size": { "value": 5, "random": true },
-      "line_linked": {
-        "enable": true,
-        "distance": 150,
-        "color": "#ffffff",
-        "opacity": 0.4,
-        "width": 1
-      },
-      "move": {
-        "enable": true,
-        "speed": 6,
-        "direction": "none",
-        "random": false,
-        "straight": false,
-        "out_mode": "out",
-        "bounce": false
-      }
+      "shape": { "type": "circle" },
+      "opacity": { "value": 0.7 },
+      "size": { "value": 3, "random": true },
+      "move": { "enable": true, "speed": 1 }
     },
     "interactivity": {
       "detect_on": "canvas",
       "events": {
-        "onhover": { "enable": true, "mode": "repulse" },
+        "onhover": { "enable": true, "mode": "grab" },
         "onclick": { "enable": true, "mode": "push" },
         "resize": true
       },
       "modes": {
-        "repulse": { "distance": 100, "duration": 0.4 },
+        "grab": { "distance": 100, "line_linked": { "opacity": 1 } },
         "push": { "particles_nb": 4 }
       }
     },
     "retina_detect": true
   });
 </script>
+{% endraw %}
