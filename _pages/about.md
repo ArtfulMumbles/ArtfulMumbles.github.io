@@ -1,6 +1,6 @@
 ---
 layout: about
-title: "about"
+title: about
 permalink: /
 subtitle: "The more I read, the more I acquire, the more certain I am that I know nothing." — <cite>Voltaire</cite>
 profile:
