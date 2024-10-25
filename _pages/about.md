@@ -1,8 +1,9 @@
 ---
 layout: about
-title: about
+title: "About"
 permalink: /
-subtitle: "The more I read, the more I acquire, the more certain I am that I know nothing." — <cite>Voltaire</cite>
+subtitle: |
+  "The more I read, the more I acquire, the more certain I am that I know nothing." — <cite>Voltaire</cite>
 profile:
   align: right
   image: prof_pic.png
