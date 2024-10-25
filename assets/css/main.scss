@@ -23,3 +23,31 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
+
+/* Particles.js background styling */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Send particles behind the content */
+  background-color: #1d1d63; /* Optional background under particles */
+}
+
+/* Ensure the content sits above the particles */
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 40px;
+  color: white;
+  max-width: 1200px; /* Optional: control content width */
+  margin: 0 auto; /* Center the content */
+}
+
+/* Prevent scrolling issues */
+body {
+  margin: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
+
