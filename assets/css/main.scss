@@ -24,6 +24,7 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-outline.scss"
 ;
 
+
 /* Particles.js background styling */
 #particles-js {
   position: fixed;
@@ -36,12 +37,11 @@ $max-content-width: {{ site.max_width }};
 }
 
 /* Ensure the content sits above the particles */
-.content {
+.particles-content {
   position: relative;
   z-index: 1;
   padding: 40px;
   color: white;
-  max-width: 1200px; /* Optional: control content width */
   margin: 0 auto; /* Center the content */
 }
 
