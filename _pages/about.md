@@ -28,7 +28,7 @@ blog: false
   </div>
 </div>
 
-<!-- 
+
   <h2>Featured Projects</h2>
 
   <div class="row row-cols-1 row-cols-md-3">
@@ -40,4 +40,4 @@ blog: false
 
   <p style="text-align: center; margin-top: 40px;">
     <a href="/projects/" class="btn btn-primary">View All Projects</a>
-  </p> -->
+  </p>

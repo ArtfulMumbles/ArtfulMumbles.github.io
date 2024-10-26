@@ -39,6 +39,17 @@
   id="highlight_theme_dark"
 >
 
+<!-- Enforce Dark Mode -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Remove any stored theme preference
+    localStorage.removeItem('theme');
+    // Set the data-theme attribute to 'dark' on the <html> element
+    document.documentElement.setAttribute('data-theme', 'dark');
+  });
+</script>
+
+
 {% if page.toc and page.toc.sidebar %}
   <!-- Sidebar Table of Contents -->
   <link defer href="{{ '/assets/css/bootstrap-toc.min.css' | relative_url | bust_file_cache }}" rel="stylesheet">
