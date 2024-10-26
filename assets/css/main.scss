@@ -47,13 +47,13 @@ $max-content-width: {{ site.max_width }};
   z-index: 1;
   padding: 40px;
   color: white;
-  max-width: 1200px; /* Optional: control content width */
+  max-width: $max-content-width; /* Optional: control content width */
   margin: 0 auto; /* Center the content */
 }
 
 /* Ensure the navbar appears above the particles */
 .navbar {
-  position: relative;
+  position: fixed;
   z-index: 2;
 }
 
