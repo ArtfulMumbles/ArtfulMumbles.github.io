@@ -24,7 +24,6 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-outline.scss"
 ;
 
-
 /* Particles.js background styling */
 #particles-js {
   position: fixed;
@@ -32,11 +31,8 @@ $max-content-width: {{ site.max_width }};
   height: 100%;
   top: 0;
   left: 0;
-  z-index: -1; /* Send particles behind the content */
-  background: linear-gradient(135deg, #1d1d63, #16213e); /* Gradient background */
-  /* Optional: Add a subtle pattern overlay using CSS or an image */
-  /* Example with a semi-transparent overlay */
-  /* background-image: linear-gradient(135deg, rgba(29,29,99,0.8), rgba(22,33,62,0.8)), url('/path/to/pattern.png'); */
+  z-index: -1;
+  background: linear-gradient(135deg, #1d1d63, #16213e);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -45,20 +41,58 @@ $max-content-width: {{ site.max_width }};
 .particles-content {
   position: relative;
   z-index: 1;
-  padding: 40px;
+  padding: 60px 20px; /* Add breathing room */
   color: white;
-  max-width: $max-content-width; /* Optional: control content width */
-  margin: 0 auto; /* Center the content */
+  max-width: $max-content-width;
+  margin: 0 auto;
 }
 
-/* Ensure the navbar appears above the particles */
+/* Navbar Styling */
 .navbar {
   position: fixed;
   z-index: 2;
+  width: 100%;
+  padding: 15px 30px;
+  background-color: rgba(0, 0, 0, 0.8); /* Slight transparency */
 }
 
-/* Prevent scrolling issues */
+/* Prevent overlapping */
 body {
   margin: 0;
-  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-x: hidden;
+  line-height: 1.8;
+  padding-top: 60px;
+}
+
+/* Styling for text elements */
+p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+/* Profile picture adjustments */
+.profile-picture {
+  float: right;
+  margin: 20px 0 20px 40px;
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+/* Section and title adjustments */
+h2 {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.row {
+  margin-top: 30px;
+}
+
+/* Responsive design for projects */
+@media (max-width: 768px) {
+  .row-cols-md-3 {
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+  }
 }
