@@ -33,7 +33,12 @@ $max-content-width: {{ site.max_width }};
   top: 0;
   left: 0;
   z-index: -1; /* Send particles behind the content */
-  background-color: #1d1d63; /* Optional background under particles */
+  background: linear-gradient(135deg, #1d1d63, #16213e); /* Gradient background */
+  /* Optional: Add a subtle pattern overlay using CSS or an image */
+  /* Example with a semi-transparent overlay */
+  /* background-image: linear-gradient(135deg, rgba(29,29,99,0.8), rgba(22,33,62,0.8)), url('/path/to/pattern.png'); */
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 /* Ensure the content sits above the particles */
@@ -42,5 +47,18 @@ $max-content-width: {{ site.max_width }};
   z-index: 1;
   padding: 40px;
   color: white;
+  max-width: 1200px; /* Optional: control content width */
   margin: 0 auto; /* Center the content */
+}
+
+/* Ensure the navbar appears above the particles */
+.navbar {
+  position: relative;
+  z-index: 2;
+}
+
+/* Prevent scrolling issues */
+body {
+  margin: 0;
+  overflow-x: hidden; /* Disable horizontal scroll */
 }

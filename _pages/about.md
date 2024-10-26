@@ -1,6 +1,6 @@
 ---
 layout: about
-title: "About"
+title: "about"
 permalink: /
 subtitle: |
   "The more I read, the more I acquire, the more certain I am that I know nothing." — <cite>Voltaire</cite>
@@ -17,7 +17,6 @@ blog: false
 
 <!-- Content container to ensure content is above the particles -->
 <div class="post content particles-content">
-  <h1>Michael A. Scutari</h1>
 
   <p>I’m a third-year student at <a href="https://duke.edu" target="_blank">Duke University</a> pursuing degrees in ECE and CS. My work blends AI, robotics, and bioinformatics, where I explore applications of <a href="https://labwebsite.com" target="_blank">protein language models</a> for drug development under the guidance of <a href="https://rohitsinghlab.com" target="_blank">Dr. Rohit Singh</a>.</p>
 
