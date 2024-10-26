@@ -16,15 +16,18 @@ blog: false
 ---
 
 <!-- Content container to ensure content is above the particles -->
-<div class="post content particles-content">
-
+<div style="display: flex; align-items: flex-start; gap: 40px;">
   <img src="prof_pic.png" alt="Profile Picture" class="profile-picture">
+  <div>
 
   <p>I’m a third-year student at <a href="https://duke.edu" target="_blank">Duke University</a> pursuing degrees in ECE and CS. My work blends AI, robotics, and bioinformatics. Currently, I explore applications of <a href="https://labwebsite.com" target="_blank">protein language models</a> for drug development under the guidance of <a href="https://rohitsinghlab.com" target="_blank">Dr. Rohit Singh</a>.</p>
 
   <p>My work has earned me a <a href="https://pratt.duke.edu/" target="_blank">Pratt Fellowship</a> and consideration for graduation with distinction in ECE. I also serve as a TA for undergraduate ECE labs.</p>
 
   <p>I enjoy <a href="/portfolio">photography</a>, Italian fusion cuisine, and <a href="https://spotify.com/your-podcast" target="_blank">host a podcast</a> that highlights Duke's most impressive talent.</p>
+  </div>
+</div>
+
 
   <h2>Featured Projects</h2>
 
