@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Duke Humanoid
-description: Open-source 10-degrees-of-freedom humanoid.
+description: Open-source 10-degrees-of-freedom humanoid.    
 img: assets/img/dukehumanoidv1-teaser.jpg
 importance: 5
 redirect: http://www.generalroboticslab.com/blogs/blog/2024-09-29-dukehumanoidv1/index.html
