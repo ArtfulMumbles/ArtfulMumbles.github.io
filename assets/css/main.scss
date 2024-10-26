@@ -52,8 +52,25 @@ $max-content-width: {{ site.max_width }};
   position: fixed;
   z-index: 2;
   width: 100%;
-  padding: 15px 30px;
-  background-color: rgba(0, 0, 0, 0.8); /* Slight transparency */
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.9); /* Slight transparency */
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 8px 15px; /* Further reduce padding on mobile */
+  }
+
+  .navbar .navbar-brand,
+  .navbar .nav-link {
+    font-size: 0.9rem; /* Smaller font on mobile */
+  }
+}
+
+/* Project Card Styling */
+.projects .card {
+  padding: 10px; /* Reduce padding inside the card */
+  margin-bottom: 20px; /* Adjust margin between cards */
 }
 
 /* Prevent overlapping */
@@ -71,13 +88,48 @@ p {
   margin-bottom: 15px;
 }
 
-/* Profile picture adjustments */
-.profile-picture {
-  float: right;
-  margin: 20px 0 20px 40px;
-  border-radius: 10px;
-  max-width: 300px;
+/* Add this to your main CSS file */
+
+/* Flex container styling */
+.profile-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
+
+/* Profile image styling */
+.profile-container .profile-picture {
+  max-width: 200px; /* Adjust as needed */
+  width: 100%;
+  height: auto;
+  flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+/* Profile text styling */
+.profile-container .profile-text {
+  flex: 1; /* Allow text to take remaining space */
+  min-width: 250px; /* Prevent text from becoming too narrow */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    gap: 20px; /* Reduce gap for smaller screens */
+    text-align: center; /* Center text for better readability */
+  }
+
+  .profile-container .profile-picture {
+    max-width: 150px; /* Smaller image on mobile */
+  }
+
+  .profile-container .profile-text {
+    min-width: 100%; /* Allow text to take full width */
+  }
+}
+
 
 /* Section and title adjustments */
 h2 {
