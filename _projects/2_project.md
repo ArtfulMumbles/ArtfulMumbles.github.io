@@ -2,39 +2,49 @@
 layout: page
 title: 3D Printed Quadrupedal Robot
 description: A low-cost 3D printed quadruped, designed and built from scratch.
-img: assets/img/quadruped.jpg
-importance: 5
+img: assets/img/quadruped.png
+importance: 0
 category: work
-giscus_comments: true
-video_url: <embed_video_url_here>
+giscus_comments: false
 ---
 
-I designed and built this quadrupedal robot entirely from scratch, starting from ideation to the final product. Using **Fusion 360**, I modeled the design and proceeded to **3D print** the components. The robot was fully simulated in **Isaac Sim** and features both **LiDAR** and an **IMU sensor** for enhanced sensing capabilities. I also explored the potential of **Isaac Gym** for improved sensing and control.  
+I designed and built this **quadrupedal robot** from the ground up, starting with ideation and progressing through **Fusion 360 design** and **3D printing**. The robot was fully simulated using **Isaac Sim** and incorporates **LiDAR** and an **IMU sensor** for sensing and stabilization. I also experimented with **Isaac Gym** to explore enhanced control through simulation.  
 
 <div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/robot_1.jpg" title="Fusion 360 Design" class="img-fluid rounded z-depth-1" %}
+  <div class="col-sm-6 mt-3 mt-md-0">
+    {% include figure.liquid path="assets/img/quadruped.jpg" title="Glamour Shot" class="img-fluid rounded z-depth-1" %}
   </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
+  <div class="col-sm-6 mt-3 mt-md-0">
     {% include figure.liquid path="assets/img/robot_2.jpg" title="3D Printed Prototype" class="img-fluid rounded z-depth-1" %}
   </div>
 </div>
 
 <div class="caption">
-  Left: 3D model created in Fusion 360. Right: Printed prototype ready for assembly.
+  Left: The robot's design in Fusion 360. Right: The 3D-printed prototype during assembly.
 </div>
 
-The robot integrates **sensors like an IMU** to stabilize its movement and **LiDAR** for environmental mapping. Below is a video demonstrating the robot's capabilities:
+The robot features:
+- **IMU for stability**  
+- **LiDAR for environmental mapping**  
+- **Simulation in Isaac Sim and Isaac Gym**
 
+Below are two videos that demonstrate the robot in action:
+
+### Video 1: Simulation in Isaac Sim  
 <div class="embed-responsive embed-responsive-16by9 mt-3">
-  <iframe class="embed-responsive-item" src="<embed_video_url_here>" allowfullscreen></iframe>
+  <iframe class="embed-responsive-item" src="<embed_video_url_1>" allowfullscreen></iframe>
 </div>
 
-This project pushed the limits of my knowledge in **mechanical design, sensor integration, and simulation tools**, culminating in a functional and modular robot.
+### Video 2: Physical Robot Test  
+<div class="embed-responsive embed-responsive-16by9 mt-3">
+  <iframe class="embed-responsive-item" src="<embed_video_url_2>" allowfullscreen></iframe>
+</div>
+
+This project was an incredible opportunity to combine **mechanical design, sensing integration, and simulation tools**. It also allowed me to learn and explore the **potential of autonomous robotics through trial and error**.
 
 ---
 
-### How to Embed the Video:
-Replace `<embed_video_url_here>` in the code above with the embed URL for your video (from YouTube, Vimeo, etc.).
+### Instructions:
+Replace `<embed_video_url_1>` and `<embed_video_url_2>` with the respective embed URLs of your videos. Add or replace the images in `assets/img/robot_1.jpg` and `assets/img/robot_2.jpg` as needed.
 
-Let me know if further modifications are needed!
+Let me know if any further adjustments are needed!
