@@ -18,7 +18,7 @@ blog: false
 <!-- Content container to ensure content is above the particles -->
 <div class="post content particles-content">
 
-  <p>I’m a third-year student at <a href="https://duke.edu" target="_blank">Duke University</a> pursuing degrees in ECE and CS. My work blends AI, robotics, and bioinformatics, where I explore applications of <a href="https://labwebsite.com" target="_blank">protein language models</a> for drug development under the guidance of <a href="https://rohitsinghlab.com" target="_blank">Dr. Rohit Singh</a>.</p>
+  <p>I’m a third-year student at <a href="https://duke.edu" target="_blank">Duke University</a> pursuing degrees in ECE and CS. My work blends AI, robotics, and bioinformatics. Currently, I explore applications of <a href="https://labwebsite.com" target="_blank">protein language models</a> for drug development under the guidance of <a href="https://rohitsinghlab.com" target="_blank">Dr. Rohit Singh</a>.</p>
 
   <p>My work has earned me a <a href="https://pratt.duke.edu/" target="_blank">Pratt Fellowship</a> and consideration for graduation with distinction in ECE. I also serve as a TA for undergraduate ECE labs.</p>
 
