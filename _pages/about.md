@@ -17,7 +17,7 @@ blog: false
 
 <!-- Content container to ensure content is above the particles -->
 <div style="display: flex; align-items: flex-start; gap: 40px;">
-  <img src="prof_pic.png" alt="Profile Picture" class="profile-picture">
+   <!-- <img src="prof_pic.png" alt="Profile Picture" class="profile-picture"> -->
   <div>
 
   <p>I’m a third-year student at <a href="https://duke.edu" target="_blank">Duke University</a> pursuing degrees in ECE and CS. My work blends AI, robotics, and bioinformatics. Currently, I explore applications of <a href="https://labwebsite.com" target="_blank">protein language models</a> for drug development under the guidance of <a href="https://rohitsinghlab.com" target="_blank">Dr. Rohit Singh</a>.</p>
